@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Luckiest+Guy&family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import "./colors";
+
+@mixin bigLetters {
+  color: $white;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@mixin heroTitle {
+  text-shadow: 0px 15px 4px rgba(0, 0, 0, 0.25);
+  font-family: Luckiest Guy;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+
+  background: linear-gradient(
+    180deg,
+    #17cba1 0%,
+    rgba(255, 255, 255, 0.99) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

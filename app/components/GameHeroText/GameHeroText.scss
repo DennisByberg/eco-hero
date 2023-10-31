@@ -1,0 +1,14 @@
+@import "../../sass/colors";
+@import "../../sass/mixins";
+@import "../../sass/fonts";
+
+.hero-text {
+  &__title {
+    @include heroTitle;
+  }
+
+  &__description {
+    @include bigLetters;
+    width: 783px;
+  }
+}

@@ -1,10 +1,16 @@
-import RegisterMyEmailButton from './components/RegisterMyEmailButton/RegisterMyEmailButton';
+import RegisterMyEmailButton from "./components/RegisterMyEmailButton/RegisterMyEmailButton";
+import GameHeroText from "./components/GameHeroText/GameHeroText";
 
 export default function Home() {
   return (
-    <div className='home'>
+    <div className="home">
+      <GameHeroText />
       <div>
-        <input type='email' placeholder='type your email here...' />
+        <input
+          className="home__input"
+          type="email"
+          placeholder="type your email here..."
+        />
         <RegisterMyEmailButton />
       </div>
     </div>

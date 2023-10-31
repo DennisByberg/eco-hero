@@ -8,7 +8,7 @@ function RegisterMyEmailButton() {
     axios.post('/api/userReg', mailInput);
   }
   return (
-    <button onClick={(mailInput) => handleRegisterMyEmail}>
+    <button className='reg__btn' onClick={(mailInput) => handleRegisterMyEmail}>
       REGISTER MY EMAIL
     </button>
   );

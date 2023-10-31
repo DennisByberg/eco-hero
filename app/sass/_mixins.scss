@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Luckiest+Guy&family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import "./colors";
+
+@mixin input {
+  width: 642px;
+  height: 55px;
+  border-radius: 24px;
+  border: 1px solid $white;
+  background: $white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-indent: 4px;
+}
+
+@mixin btnFilled {
+  width: 235px;
+  height: 40px;
+  border-radius: 24px;
+  border: 1px solid $white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@mixin btnTransparent {
+  width: 235px;
+  height: 40px;
+  border-radius: 24px;
+  border: 1px solid $white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  cursor: pointer;
+
+  color: $white;
+  background: none;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
