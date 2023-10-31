@@ -1,0 +1,28 @@
+@import "../../sass/colors";
+@import "../../sass/mixins";
+@import "../../sass/fonts";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+
+  &__logo {
+    width: 40px;
+  }
+
+  &__links {
+    @include bigLetters;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $white;
+    margin: 0 1.2rem;
+  }
+
+  &__account {
+    @include bigLetters;
+  }
+}
