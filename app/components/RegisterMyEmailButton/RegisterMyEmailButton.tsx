@@ -1,10 +1,16 @@
 'use client';
+
+import axios from 'axios';
 import './RegisterMyEmailButton.scss';
 
 function RegisterMyEmailButton() {
-  function handleRegisterMyEmail() {
-    console.log('REGISTER EMAIL');
+  async function handleRegisterMyEmail(mailInput: string) {
+    axios.post('/api/userReg', mailInput);
   }
-  return <button onClick={handleRegisterMyEmail}>REGISTER MY EMAIL</button>;
+  return (
+    <button onClick={(mailInput) => handleRegisterMyEmail}>
+      REGISTER MY EMAIL
+    </button>
+  );
 }
 export default RegisterMyEmailButton;
