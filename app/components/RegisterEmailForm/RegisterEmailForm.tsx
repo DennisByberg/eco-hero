@@ -2,33 +2,44 @@
 
 import axios from 'axios';
 import './RegisterEmailForm.scss';
-import { useState } from 'react';
 import delay from 'delay';
+import { useForm } from 'react-hook-form';
+import { useState } from 'react';
 
-function RegisterMyEmailButton() {
-  const [mailInput, setMailInput] = useState('');
+interface IMailForm {
+  email: string;
+}
 
-  async function handleRegisterMyEmail(email: string) {
-    await axios.post('/api/users', { email: email });
-    await delay(3000);
-    setMailInput('');
+function RegisterEmailForm() {
+  const [error, setError] = useState('');
+  const { register, handleSubmit, reset } = useForm<IMailForm>();
+
+  async function onSubmitForm(data: IMailForm) {
+    try {
+      await axios.post('/api/users', data);
+      reset();
+      setError('');
+    } catch {
+      setError('An unexpected error occurred');
+    }
   }
+
   return (
-    <div>
-      <input
-        onChange={(e) => setMailInput(e.target.value)}
-        value={mailInput}
-        className='home__input'
-        type='email'
-        placeholder='type your email here...'
-      />
-      <button
-        className='reg__btn'
-        onClick={() => handleRegisterMyEmail(mailInput)}
-      >
+    <form className='register-email-form' onSubmit={handleSubmit(onSubmitForm)}>
+      <div className='register-email-form__container'>
+        <input
+          {...register('email')}
+          className='register-email-form__container__input'
+          placeholder='type your email here...'
+        />
+        {error && (
+          <p className='register-email-form__container__errorMSG'>{error}</p>
+        )}
+      </div>
+      <button className='register-email-form__registerBTN'>
         REGISTER MY EMAIL
       </button>
-    </div>
+    </form>
   );
 }
-export default RegisterMyEmailButton;
+export default RegisterEmailForm;

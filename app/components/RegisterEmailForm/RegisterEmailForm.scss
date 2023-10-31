@@ -1,7 +1,24 @@
-@import "../../sass/colors";
-@import "../../sass/mixins";
-@import "../../sass/fonts";
+@import '../../sass/colors';
+@import '../../sass/mixins';
+@import '../../sass/fonts';
 
-.reg__btn {
-  @include btnTransparent;
+.register-email-form {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  &__registerBTN {
+    @include btnTransparent;
+  }
+
+  &__container {
+    &__errorMSG {
+      color: rgb(243, 96, 96);
+    }
+
+    &__input {
+      height: 40px;
+      padding: 0 1rem;
+      border-radius: 100px;
+    }
+  }
 }
