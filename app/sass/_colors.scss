@@ -1,2 +1,11 @@
 $white: rgb(255, 255, 255);
 $black: rgb(0, 0, 0);
+
+$ecoHero: linear-gradient(
+  180deg,
+  #17cba1 0%,
+  rgba(255, 255, 255, 0.99) 100%,
+  rgba(255, 255, 255, 0) 100%
+);
+$eco: #17cfa3;
+$recycle: #054356;
