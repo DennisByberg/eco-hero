@@ -1,10 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import prisma from '@/prisma/client';
-import { z } from 'zod';
-
-const registerMailSchema = z.object({
-  email: z.string().email(),
-});
+import { registerMailSchema } from '../../validationSchemas';
 
 // POST
 export async function POST(request: NextRequest) {
