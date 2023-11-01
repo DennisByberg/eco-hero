@@ -20,9 +20,30 @@
     text-decoration: none;
     color: $white;
     margin: 0 1.2rem;
+
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: flex-start;
   }
 
   &__account {
     @include bigLetters;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem;
+    width: 175px;
+    border-radius: 24px;
+    border: 1px solid $white;
+  }
+
+  &__account-container {
+    margin: auto;
+  }
+
+  &__account-logo {
+    width: 25px;
   }
 }
