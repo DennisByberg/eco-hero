@@ -3,4 +3,56 @@
 @import "../../sass/fonts";
 
 .eco {
+  margin: 1rem auto;
+  text-align: center;
+  &__title {
+    @include titleText;
+    width: 100%;
+    min-width: 250px;
+    margin: auto;
+  }
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  &__card {
+    max-width: 300px;
+    min-width: 200px;
+    margin: 0.5rem;
+  }
+
+  &__text {
+    @include bigLetters;
+    margin: 0.5rem 0;
+    font-weight: bold;
+  }
+
+  &__description {
+    @include bigLetters;
+    text-transform: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .eco {
+    &__title {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    &__container {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    &__card {
+      margin-bottom: 1.5rem;
+    }
+
+    &__description {
+      font-size: 11px;
+    }
+  }
 }

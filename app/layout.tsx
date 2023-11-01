@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
 import NavBar from "./components/NavBar/NavBar";
-import heroImg from "./images/Group 25.png";
-import Image from "next/image";
+// import heroImg from "./images/Group 25.png";
+// import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Image className="heroImg" src={heroImg} alt="" />
+        {/* <Image className="heroImg" src={heroImg} alt="" /> */}
         <NavBar />
         <main>{children}</main>
       </body>
