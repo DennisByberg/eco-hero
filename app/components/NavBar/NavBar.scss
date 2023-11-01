@@ -1,6 +1,6 @@
-@import '../../sass/colors';
-@import '../../sass/mixins';
-@import '../../sass/fonts';
+@import "../../sass/colors";
+@import "../../sass/mixins";
+@import "../../sass/fonts";
 
 .navbar {
   display: flex;
@@ -12,5 +12,16 @@
   &__logo {
     width: 40px;
     height: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar {
+    margin: 0 0.5rem;
+    padding: 0.6rem 0;
+
+    &__logo {
+      width: 25px;
+    }
   }
 }
