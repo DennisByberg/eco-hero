@@ -1,15 +1,14 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.scss";
-import NavBar from "./components/NavBar/NavBar";
-import heroImg from "./images/Group 25.png";
-import Image from "next/image";
-
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.scss';
+import '@radix-ui/themes/styles.css';
+import NavBar from './components/NavBar/NavBar';
+import { Theme } from '@radix-ui/themes';
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Eco Hero",
-  description: "A game to save the world",
+  title: 'Eco Hero',
+  description: 'A game to save the world',
 };
 
 export default function RootLayout({
@@ -18,11 +17,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={inter.className}>
-        <Image className="heroImg" src={heroImg} alt="" />
-        <NavBar />
-        <main>{children}</main>
+        <Theme>
+          <NavBar />
+          <main>{children}</main>
+        </Theme>
       </body>
     </html>
   );
