@@ -1,7 +1,11 @@
 .sponsors {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
   padding: 1rem 0;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border-top: 1px solid rgba(128, 128, 128, 0.521);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.521);
+  margin-bottom: 2rem;
 
   &__txt {
     font-family: Poppins;

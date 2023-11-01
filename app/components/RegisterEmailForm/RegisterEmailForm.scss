@@ -1,12 +1,13 @@
-@import "../../sass/colors";
-@import "../../sass/mixins";
-@import "../../sass/fonts";
+@import '../../sass/colors';
+@import '../../sass/mixins';
+@import '../../sass/fonts';
 
 .register-email-form {
   display: flex;
   gap: 1.5rem;
   align-items: center;
-  margin: 0.5rem 0;
+  justify-content: center;
+  margin: 3rem 0;
 
   &__registerBTN {
     @include btnTransparent;
@@ -27,7 +28,7 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 800px) {
   .register-email-form {
     justify-content: center;
     flex-wrap: wrap;

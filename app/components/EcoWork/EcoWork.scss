@@ -1,9 +1,9 @@
-@import "../../sass/colors";
-@import "../../sass/mixins";
-@import "../../sass/fonts";
+@import '../../sass/colors';
+@import '../../sass/mixins';
+@import '../../sass/fonts';
 
 .eco {
-  margin: 1rem auto;
+  margin: 5rem auto;
   text-align: center;
   &__title {
     @include titleText;
@@ -36,7 +36,7 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 800px) {
   .eco {
     &__title {
       text-align: center;
@@ -45,6 +45,7 @@
     &__container {
       flex-wrap: wrap;
       text-align: center;
+      justify-content: center;
     }
 
     &__card {

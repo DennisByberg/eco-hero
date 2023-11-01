@@ -1,4 +1,3 @@
-import { Flex, Text } from '@radix-ui/themes';
 import './Actions.scss';
 import Image from 'next/image';
 import coinsLogo from '../../images/coinsLogo.svg';
@@ -7,22 +6,22 @@ import earthLogo from '../../images/Earth.svg';
 
 function Actions() {
   return (
-    <Flex align={'center'} justify={'between'} className='actions'>
-      <Flex gap={'3'}>
+    <div className='actions'>
+      <div className='actions__container'>
         <Image src={coinsLogo} alt='coinsLogo' />
-        <Text>PLAY and earn real life rewards!</Text>
-      </Flex>
+        <p>SPELA och tjäna verkliga belöningar!</p>
+      </div>
 
-      <Flex gap={'3'}>
+      <div className='actions__container'>
         <Image src={lightningLogo} alt='lightningLogo' />
-        <Text>DONATE and earn real life rewards!</Text>
-      </Flex>
+        <p>DONERA och tjäna verkliga belöningar!</p>
+      </div>
 
-      <Flex gap={'3'}>
+      <div className='actions__container'>
         <Image src={earthLogo} alt='earthLogo' />
-        <Text>SAVE the world and be a hero</Text>
-      </Flex>
-    </Flex>
+        <p>RÄDDA världen och bli en hjälte</p>
+      </div>
+    </div>
   );
 }
 export default Actions;

@@ -1,6 +1,6 @@
-@import "./sass/colors";
-@import "./sass/mixins";
-@import "./sass/fonts";
+@import './sass/colors';
+@import './sass/mixins';
+@import './sass/fonts';
 
 @tailwind utilities;
 
@@ -12,52 +12,31 @@
 }
 
 body {
-  // background: $black;
+  background: $black;
   color: $white;
-  min-height: 100vh;
+  // min-height: 100vh;
+}
+
+/* SCROLLBAR DESIGN! */
+body::-webkit-scrollbar {
+  width: 0.7rem;
+  background-color: $black;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px $black;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $black;
+  outline: 1px solid rgba(217, 255, 227, 0.43);
+  border-radius: 50px;
 }
 
 .home {
   margin: 0 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-
-  &__hero {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-  }
-  &__eco-form {
-    height: 110vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-}
-
-// .home::before {
-//   content: "";
-//   background: hotpink;
-//   background-image: url("./images/hero.png");
-//   background-size: cover;
-//   background-position: center;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 550px;
-//   z-index: -1;
-// }
-
-@media only screen and (max-width: 810px) {
-  .home {
-    &__hero {
-      width: 100%;
-      height: fit-content;
-    }
-  }
+  // height: 100vh;
 }

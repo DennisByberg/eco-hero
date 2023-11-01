@@ -25,7 +25,7 @@ function RegisterEmailForm() {
   async function onSubmitForm(data: TMailForm) {
     try {
       setIsSubmitting(true);
-      await delay(2000);
+      await delay(500);
       await axios.post('/api/users', data);
       toast.success('Successfully added mail');
       reset();
@@ -42,7 +42,7 @@ function RegisterEmailForm() {
         <input
           {...register('email')}
           className='register-email-form__container__input'
-          placeholder='type your email here...'
+          placeholder='Ange din email här'
         />
         {error && <p>{error}</p>}
         {errors.email && <p>{errors.email.message}</p>}
@@ -53,11 +53,11 @@ function RegisterEmailForm() {
       >
         {isSubmitting ? (
           <>
-            REGISTERING
+            REGISTRERAR
             <Spinner />
           </>
         ) : (
-          'REGISTER MY EMAIL'
+          'REGISTRERA MIN MAIL'
         )}
       </button>
       <Toaster position='bottom-center' />
