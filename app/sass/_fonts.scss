@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Luckiest+Guy&family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap");
-@import "./colors";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Luckiest+Guy&family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import './colors';
 
 @mixin bigLetters {
   color: $white;
@@ -41,4 +41,9 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@700&display=swap');
+@mixin useFontMiriamLibre {
+  font-family: 'Miriam Libre', sans-serif;
 }
