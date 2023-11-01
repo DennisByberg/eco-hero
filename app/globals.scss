@@ -17,12 +17,12 @@ body {
   min-height: 100vh;
 }
 
-.heroImg {
-  position: absolute;
-  width: 100%;
-  height: 90%;
-  z-index: -1;
-}
+// .heroImg {
+//   position: absolute;
+//   width: 100%;
+//   height: 90%;
+//   z-index: -1;
+// }
 
 // .hero {
 //   background-image: url("./images/Group\ 25.png");
@@ -32,22 +32,25 @@ body {
 // }
 
 .home {
-  position: relative;
-  margin: 0 2rem;
-  // height: 100vh;
+  // position: relative;
+  margin: 0 1rem;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  z-index: 2;
+  // z-index: 2;
 
-  &__game-form {
-    margin-top: 25rem;
-  }
-  &__eco {
-    margin-top: 5rem;
+  &__eco-form {
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    @include bigLetters;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  &__eco-work {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
   }
 }

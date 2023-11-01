@@ -7,12 +7,13 @@ import Sponsors from './components/Sponsors/Sponsors';
 export default function Home() {
   return (
     <div className='home'>
-      <div className='home__game-form'>
+      <div className='home__eco-form'>
         <GameHeroText />
         <RegisterEmailForm />
         <Actions />
       </div>
-      <div className='home__eco'>
+
+      <div className='home__eco-work'>
         <EcoWork />
       </div>
       <Sponsors />
