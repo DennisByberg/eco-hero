@@ -1,5 +1,6 @@
-@import './sass/colors';
-// @import "./sass/mixins";
+@import "./sass/colors";
+@import "./sass/mixins";
+@import "./sass/fonts";
 
 @tailwind utilities;
 
@@ -33,13 +34,20 @@ body {
 .home {
   position: relative;
   margin: 0 2rem;
-  height: 95vh;
+  // height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   z-index: 2;
 
-  // &__input {
-  //   @include input;
-  // }
+  &__game-form {
+    margin-top: 25rem;
+  }
+  &__eco {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include bigLetters;
+  }
 }
