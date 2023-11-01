@@ -26,3 +26,16 @@
     }
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .register-email-form {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__container {
+      &__input {
+        width: 300px;
+      }
+    }
+  }
+}

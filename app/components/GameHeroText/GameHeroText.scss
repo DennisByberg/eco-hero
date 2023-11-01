@@ -9,6 +9,29 @@
 
   &__description {
     @include bigLetters;
-    width: 783px;
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hero-text {
+    text-align: center;
+    &__title {
+      font-size: 5rem;
+    }
+
+    &__description {
+      text-transform: none;
+      font-size: 11px;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .hero-text {
+    text-align: center;
+    &__title {
+      font-size: 4rem;
+    }
   }
 }
