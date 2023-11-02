@@ -3,8 +3,9 @@
 @import '../../sass/fonts';
 
 .eco {
-  margin: 5rem auto;
+  margin: 4rem 1rem;
   text-align: center;
+
   &__title {
     @include titleText;
     width: 100%;

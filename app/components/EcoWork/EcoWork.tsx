@@ -3,11 +3,12 @@ import Image from 'next/image';
 import tShirt from '../../images/recycle-clothes.svg';
 import recycle from '../../images/recycle.svg';
 import ecoHome from '../../images/eco-home.svg';
+import { useFontRajdhani } from '@/app/fonts';
 
 function EcoWork() {
   return (
     <div className='eco'>
-      <h1 className='eco__title'>
+      <h1 className={`eco__title ${useFontRajdhani.className}`}>
         vi samarbeter med olika organisationer runt i världen{' '}
       </h1>
 

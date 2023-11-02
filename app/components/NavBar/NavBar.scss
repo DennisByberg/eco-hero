@@ -1,13 +1,15 @@
-@import "../../sass/colors";
-@import "../../sass/mixins";
-@import "../../sass/fonts";
+@import '../../sass/colors';
+@import '../../sass/mixins';
+@import '../../sass/fonts';
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 1rem;
-  padding: 1rem 0;
+  // margin: 0 1rem;
+  margin: auto;
+  padding: 1rem;
+  max-width: 1440px;
 
   &__logo {
     width: 40px;

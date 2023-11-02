@@ -1,11 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.scss';
-import { Inter } from 'next/font/google';
+import { useFontPoppins } from './fonts';
 import './globals.scss';
 import NavBar from './components/NavBar/NavBar';
 import { Analytics } from '@vercel/analytics/react';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Eco Hero',
@@ -19,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={useFontPoppins.className}>
         <NavBar />
         <main>
           {children}

@@ -7,7 +7,7 @@
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
-  margin: 3rem 0;
+  margin: 3rem 1rem 1rem 1rem;
 
   &__registerBTN {
     @include btnTransparent;
@@ -24,11 +24,17 @@
 
     &__input {
       @include input;
+      font-weight: 500;
+      &::placeholder {
+        /* CSS properties to style the placeholder text */
+        color: #0000004d; /* Change the color of the placeholder text */
+        /* Any other properties you wish to apply to the placeholder */
+      }
     }
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .register-email-form {
     justify-content: center;
     flex-wrap: wrap;

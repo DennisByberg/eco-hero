@@ -4,11 +4,11 @@ import './RegisterEmailForm.scss';
 import delay from 'delay';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
-import { zodResolver } from '@hookform/resolvers/zod';
 import z from 'zod';
 import { registerMailSchema } from '@/app/validationSchemas';
 import Spinner from '../Spinner/Spinner';
 import toast, { Toaster } from 'react-hot-toast';
+import { useFontPoppins } from '@/app/fonts';
 
 type TMailForm = z.infer<typeof registerMailSchema>;
 
@@ -41,7 +41,7 @@ function RegisterEmailForm() {
       <div className='register-email-form__container'>
         <input
           {...register('email')}
-          className='register-email-form__container__input'
+          className={`register-email-form__container__input ${useFontPoppins.className}`}
           placeholder='Ange din email här'
         />
         {error && <p>{error}</p>}
@@ -49,7 +49,7 @@ function RegisterEmailForm() {
       </div>
       <button
         disabled={isSubmitting}
-        className='register-email-form__registerBTN'
+        className={`register-email-form__registerBTN ${useFontPoppins.className}`}
       >
         {isSubmitting ? (
           <>
