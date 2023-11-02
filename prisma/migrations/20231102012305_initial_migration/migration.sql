@@ -1,12 +1,3 @@
-/*
-  Warnings:
-
-  - You are about to drop the `reguser` table. If the table is not empty, all the data it contains will be lost.
-
-*/
--- DropTable
-DROP TABLE `reguser`;
-
 -- CreateTable
 CREATE TABLE `User` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
