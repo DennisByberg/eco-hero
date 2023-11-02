@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import './globals.scss';
 import { useFontPoppins } from './fonts';
 import './globals.scss';
-import NavBar from './components/NavBar/NavBar';
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
@@ -18,7 +17,6 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={useFontPoppins.className}>
-        <NavBar />
         <main>
           {children}
           <Analytics />

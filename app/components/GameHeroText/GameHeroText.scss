@@ -3,7 +3,6 @@
 @import '../../sass/fonts';
 
 .hero-text {
-  text-align: center;
   margin: 0 1rem;
 
   &__title {
@@ -13,8 +12,16 @@
   &__description {
     @include bigLetters;
     max-width: 800px;
-    margin: auto;
     text-transform: none;
+  }
+
+  &__image {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    z-index: -1;
+    width: 100%; /* Set a width to fill its container */
+    object-fit: cover; /* Fits the image inside the container without stretching */
   }
 }
 
