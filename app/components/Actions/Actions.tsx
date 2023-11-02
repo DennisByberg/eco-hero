@@ -2,7 +2,7 @@ import './Actions.scss';
 import Image from 'next/image';
 import coinsLogo from '../../images/coinsLogo.svg';
 import lightningLogo from '../../images/small-lightning.svg';
-import earthLogo from '../../images/Earth.svg';
+import earthLogo from '../../images/earth.svg';
 
 function Actions() {
   return (
