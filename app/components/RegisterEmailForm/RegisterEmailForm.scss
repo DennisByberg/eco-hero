@@ -26,6 +26,8 @@
     &__input {
       @include input;
       font-weight: 500;
+      font-size: 1rem;
+      color: black;
       &::placeholder {
         color: #0000004d;
       }
@@ -33,11 +35,10 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .register-email-form {
     justify-content: center;
     flex-wrap: wrap;
-
     &__container {
       &__input {
         width: 250px;

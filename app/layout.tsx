@@ -3,6 +3,7 @@ import './globals.scss';
 import { useFontPoppins } from './fonts';
 import './globals.scss';
 import { Analytics } from '@vercel/analytics/react';
+import { Theme, ThemePanel } from '@radix-ui/themes';
 
 export const metadata: Metadata = {
   title: 'Eco Hero',
@@ -17,10 +18,8 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={useFontPoppins.className}>
-        <main>
-          {children}
-          <Analytics />
-        </main>
+        <main>{children}</main>
+        <Analytics />
       </body>
     </html>
   );

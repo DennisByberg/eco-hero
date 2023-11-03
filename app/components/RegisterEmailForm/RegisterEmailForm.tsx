@@ -9,6 +9,7 @@ import { registerMailSchema } from '@/app/validationSchemas';
 import Spinner from '../Spinner/Spinner';
 import toast, { Toaster } from 'react-hot-toast';
 import { useFontPoppins } from '@/app/fonts';
+import Dialog from '../Dialog/Dialog';
 
 type TMailForm = z.infer<typeof registerMailSchema>;
 
@@ -60,7 +61,8 @@ function RegisterEmailForm() {
           'REGISTRERA MIN MAIL'
         )}
       </button>
-      <Toaster position='bottom-center' />
+      <Dialog />
+      <Toaster position='top-center' />
     </form>
   );
 }

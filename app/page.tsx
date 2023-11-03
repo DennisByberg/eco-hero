@@ -10,13 +10,13 @@ import spaceImage from '@/app/images/hero-img.svg';
 export default function Home() {
   return (
     <div className='home'>
+      <NavBar />
       <div className='hero-img-container'>
         <Image
           className='hero-img-container__image'
           src={spaceImage}
           alt='space'
         ></Image>
-        <NavBar />
         <GameHeroText />
         <RegisterEmailForm />
       </div>
